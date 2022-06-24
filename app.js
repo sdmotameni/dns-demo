@@ -5,7 +5,11 @@ const app = express();
 app.all("*", (req, res) => {
   var fullUrl = req.protocol + "://" + req.get("host") + req.originalUrl;
 
+  console.log(fullUrl);
+
   res.send("Hello World!");
 });
 
-app.listen(3000, () => console.log("Listening on..."));
+let port = process.env.PORT || 3000;
+
+app.listen(port, () => console.log(`Listening on ${port}...`));
