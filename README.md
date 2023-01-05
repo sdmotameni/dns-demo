@@ -3,7 +3,7 @@
 Use cases
 
 - Domain name validation for API
-- Redirect traffic to new location contigent on origin
+- Route traffic to new location contigent on origin
 - And more
 
 # Blueprint for custom domain link shorting service:
